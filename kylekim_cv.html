@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kyle Hyunsuk Kim — CV</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+  @font-face {
+    font-family: 'Eastman';
+    src: url('https://db.onlinewebfonts.com/t/east.woff2') format('woff2');
+  }
+
+  @page {
+    size: A4;
+    margin: 15mm;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html, body {
+    min-height: 100vh;
+    background: #e8e8e8;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px 0;
+  }
+
+  body {
+    font-family: 'Pretendard', 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+    font-size: 9pt;
+    line-height: 1.4;
+    color: #1a1a1a;
+  }
+  a {color:#666666;}
+
+  .page {
+    width: 210mm;
+    min-height: 297mm;
+    padding: 15mm;
+    background: #fff;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+  }
+
+  /* HEADER */
+  .header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 12px;
+    border-bottom: 2px solid #1a1a1a;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+  }
+
+  .header-left h1 {
+    font-family: 'Pretendard', sans-serif;
+    font-weight: 800;
+    font-size: 19pt;
+    letter-spacing: -0.5px;
+    line-height: 1.1;
+    color: #1a1a1a;
+    text-transform: uppercase;
+  }
+
+  .header-left .subtitle {
+    font-size: 8pt;
+    color: #555;
+    margin-top: 2px;
+    letter-spacing: 1.2px;
+  }
+
+  .header-right {
+    text-align: right;
+    font-size: 8pt;
+    color: #444;
+    line-height: 1.6;
+  }
+
+  .header-right a {
+    color: #444;
+    text-decoration: none;
+  }
+
+  /* SECTIONS */
+  .cv-grid {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 0;
+  }
+
+  .section {
+    display: contents;
+  }
+
+  .section-label {
+    font-family: 'Pretendard', sans-serif;
+    font-weight: 700;
+    font-size: 6.5pt;
+    letter-spacing: 1.3px;
+    text-transform: uppercase;
+    color: #1a1a1a;
+    padding: 7px 10px 2px 0;
+    border-top: 1px solid #ddd;
+    line-height: 1.3;
+  }
+
+  .section-content {
+    padding: 7px 0 2px 0;
+    border-top: 1px solid #ddd;
+  }
+
+  .section-label.no-border,
+  .section-content.no-border {
+    border-top: none;
+    padding-top: 0;
+  }
+
+  /* EXPERIENCE rows */
+  .exp-row {
+    display: grid;
+    grid-template-columns: 85px 1fr;
+    gap: 0 6px;
+    margin-bottom: 0;
+    line-height: 1.6;
+  }
+
+  .exp-year {
+    font-size: 7.5pt;
+    color: #888;
+    white-space: nowrap;
+  }
+
+  .exp-title {
+    font-size: 8.5pt;
+    color: #1a1a1a;
+  }
+
+  .exp-title .bold {
+    font-weight: 600;
+  }
+
+  /* EDUCATION same */
+  .edu-row {
+    display: grid;
+    grid-template-columns: 85px 1fr;
+    gap: 0 6px;
+    margin-bottom: 0;
+    line-height: 1.6;
+    font-size: 8.5pt;
+  }
+  .edu-year { color: #888; font-size: 7.5pt; }
+
+  /* AWARDS inline */
+  .award-row {
+    display: grid;
+    grid-template-columns: 85px 1fr;
+    gap: 0 6px;
+    margin-bottom: 0;
+    font-size: 8.5pt;
+    line-height: 1.6;
+  }
+  .award-year { color: #888; font-size: 7.5pt; }
+
+  /* PUBLICATIONS */
+  .pub-item {
+    font-size: 8.5pt;
+    margin-bottom: 0;
+    line-height: 1.6;
+  }
+
+  /* SELECTED PROJECTS — comma list */
+  .project-list {
+    font-size: 8pt;
+    color: #333;
+    line-height: 1.6;
+  }
+
+  /* ACTIVITIES — 2-col grid */
+  .act-list {
+    column-count: 2;
+    column-gap: 16px;
+    font-size: 8pt;
+    line-height: 1.6;
+  }
+  .act-item {
+    display: flex;
+    gap: 0;
+    break-inside: avoid;
+    margin-bottom: 0;
+    line-height: 1.6;
+  }
+  .act-year { color: #888; font-size: 7.5pt; white-space: nowrap; min-width: 90px; flex-shrink: 0; }
+  .act-text { font-size: 8pt; }
+
+  .divider-line {
+    border: none;
+    border-top: 2px solid #1a1a1a;
+    margin-top: 3px;
+    margin-bottom: 1px;
+  }
+
+  /* Print */
+  @media print {
+    body { background: white; }
+    .page { box-shadow: none; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="header-left">
+      <h1>Hyunsuk Kim</h1>
+      
+    </div>
+    <div class="header-right">
+      <a href="mailto:kylekim@hongik.ac.kr">kylekim@hongik.ac.kr</a><br>
+      <a href="mailto:kylekim@gmail.com">kylekim@gmail.com</a><br>
+      <a href="tel:8223201933">+82 2 320 1933</a><br>
+      <a href="tel:821080013433">+82 10 8001 3433</a><br>
+      ORCID: <a href="https://orcid.org/0000-0001-9783-6872">0000-0001-9783-6872</a><br>
+      <a href="linkedin.com/in/kylekim802">linkedin.com/in/kylekim802</a>
+    </div>
+  </div>
+
+  <div class="cv-grid">
+
+    <!-- ACADEMIC & PROFESSIONAL EXPERIENCE -->
+    <div class="section-label no-border">Experience</div>
+    <div class="section-content no-border">
+      <div class="exp-row"><span class="exp-year">2025 – present</span><span class="exp-title"><span class="bold">Dean of Student Affairs</span>, Hongik University, Seoul, Korea</span></div>
+      <div class="exp-row"><span class="exp-year">2004 – present</span><span class="exp-title"><span class="bold">Professor</span>, Dept. of Visual Communication Design, Hongik University, Seoul, Korea</span></div>
+      <div class="exp-row"><span class="exp-year">2021 – 2025</span><span class="exp-title"><span class="bold">Dean</span>, Graduate School of Film and Communication, Hongik University, Seoul, Korea</span></div>
+      <div class="exp-row"><span class="exp-year">2019 – 2020</span><span class="exp-title"><span class="bold">Visiting Professor</span>, University of Technology Sydney, Sydney, Australia</span></div>
+      <div class="exp-row"><span class="exp-year">2014 – 2018</span><span class="exp-title"><span class="bold">Dean</span>, Graduate School of Film & Digital Media, Hongik University, Seoul, Korea</span></div>
+      <div class="exp-row"><span class="exp-year">2010 – 2018</span><span class="exp-title"><span class="bold">Head of Department</span>, Visual Communication Design, Hongik University, Seoul, Korea</span></div>
+      <div class="exp-row"><span class="exp-year">2006 – 2009</span><span class="exp-title"><span class="bold">CEO</span>, Studio Nautilus, Seoul, Korea</span></div>
+      <div class="exp-row"><span class="exp-year">2001 – 2005</span><span class="exp-title"><span class="bold">Design Manager</span>, Yahoo! Inc., Sunnyvale, USA</span></div>
+      <div class="exp-row"><span class="exp-year">1999 – 2001</span><span class="exp-title"><span class="bold">Senior Designer</span>, Mindstack Inc., Los Angeles, USA</span></div>
+      <div class="exp-row"><span class="exp-year">1995 – 1997</span><span class="exp-title"><span class="bold">Art Director</span>, Artisan Design Studio, Seoul, Korea</span></div>
+    </div>
+
+    <!-- EDUCATION -->
+    <div class="section-label">Education</div>
+    <div class="section-content">
+      <div class="edu-row"><span class="edu-year">2009 – 2011</span><span><span class="bold">Doctoral Coursework</span>, Digital Information Convergence, Seoul National University, Seoul, Korea</span></div>
+      <div class="edu-row"><span class="edu-year">1998 – 1999</span><span><span class="bold">MFA</span>, Digital Media, American Film Institute, Los Angeles, USA</span></div>
+      <div class="edu-row"><span class="edu-year">1995 – 1997</span><span><span class="bold">MFA</span>, Visual Communication Design, Hongik University, Seoul, Korea</span></div>
+      <div class="edu-row"><span class="edu-year">1988 – 1995</span><span><span class="bold">BFA</span>, Visual Communication Design, Hongik University, Seoul, Korea</span></div>
+    </div>
+
+    <!-- AWARDS -->
+    <div class="section-label">Awards</div>
+    <div class="section-content">
+      <div class="award-row"><span class="award-year">2024</span><span>Outstanding Paper Award, Korean Society of Design Science</span></div>
+      <div class="award-row"><span class="award-year">2022</span><span>Presidential Citation, Korean Design Excellence Award</span></div>
+      <div class="award-row"><span class="award-year">2020</span><span>Ministerial Citation, Ministry of Culture, Sports and Tourism</span></div>
+      <div class="award-row"><span class="award-year">2018</span><span>Ministerial Citation, Ministry of Culture, Sports and Tourism</span></div>
+      <div class="award-row"><span class="award-year">2017</span><span>Excellence in Mentorship Award, Korean Society of Basic Design & Art</span></div>
+      <div class="award-row"><span class="award-year">2015</span><span>Ministerial Citation, Ministry of Culture, Sports and Tourism</span></div>
+    </div>
+
+    <!-- SELECTED ACTIVITIES -->
+    <div class="section-label">Professional Activities</div>
+    <div class="section-content">
+      <div class="act-list">
+        <div class="act-item"><span class="act-year">2025 – present</span><span class="act-text">Advisory Committee, National Museum of Korea</span></div>
+        <div class="act-item"><span class="act-year">2024 –2025</span><span class="act-text">President, Korean Society of Design Science(KSDS)</span></div>
+        <div class="act-item"><span class="act-year">2024 –2025</span><span class="act-text">Executive Board Member, IASDR</span></div>
+        <div class="act-item"><span class="act-year">2024 –2025</span><span class="act-text">Academic Director, ISEA2025</span></div>
+        <div class="act-item"><span class="act-year">2024 –2026</span><span class="act-text">Policy Advisory in Design, Ministry of Trade, Industry &amp; Energy</span></div>
+        <div class="act-item"><span class="act-year">2024 –2026</span><span class="act-text">Advisory, National Asian Culture Center(ACC) Museum</span></div>
+        <div class="act-item"><span class="act-year">2012 –2025</span><span class="act-text">Editor, Archives of Design Research</span></div>
+        <div class="act-item"><span class="act-year">2013 –2022</span><span class="act-text">President, Asia Digital Art &amp; Design Korea(ADADA Korea)</span></div>
+        <div class="act-item"><span class="act-year">2020 –2021</span><span class="act-text">President, Korean Society of Design Convergence(KSDC)</span></div>
+        <div class="act-item"><span class="act-year">2012 –2015</span><span class="act-text">Vice President, International Council of Design(ICo-D)</span></div>
+        <div class="act-item"><span class="act-year">2018 –2023</span><span class="act-text">Advisory Committee, Incheon International Airport</span></div>
+        <div class="act-item"><span class="act-year">2015 –2018</span><span class="act-text">Committee, National Brand Promotion, Ministry of Culture, Sports and Tourism</span></div>
+      </div>
+    </div>
+
+    <!-- SELECTED PROJECTS -->
+    <div class="section-label">Selected Projects</div>
+    <div class="section-content">
+      <div class="project-list">
+        4D NeRF-based VFX System 'WITH' (2024) · Joseon Buddhist Artisan Immersive Video, National Museum of Korea (2021) · UI/UX Design for Autonomous Audio System, Hyundai Motor (2021) · HTS/MTS Redesign, Mirae Asset Daewoo (2017) · Sound × Letters: Hangul Design Exhibition Video, National Hangeul Museum (2017) · HMI Evaluation for Cluster Display Systems, Hyundai Motor (2016) · Situation-Aware UX Scenario Development, Samsung Electronics (2013) · AR Interface User Scenario, LG Electronics (2013) · FIFA 2006 Germany World Cup Official Website (2006) · FIFA 2003 Women's World Cup Official Website (2003) · FIFA 2002 Korea/Japan World Cup Official Website (2002) · Yahoo! Platinum Premium Video Site (2004) · Hangang Renaissance, Zaragoza International Expo Korean Pavilion (2008)
+      </div>
+    </div>
+
+    <!-- PUBLICATIONS -->
+    <div class="section-label">Books</div>
+    <div class="section-content">
+      <div class="pub-item"><span class="bold">Parrhesia, Speaking of Design</span>, Doosungbooks, 2015</div>
+      <div class="pub-item"><span class="bold">Is Design Poison or Medicine?</span>, Doosungbooks, 2014</div>
+    </div>
+
+    <!-- RESEARCH NOTE -->
+    <div class="section-label">Research</div>
+    <div class="section-content">
+      <div style="font-size:9pt; color:#444; line-height:1.5;">
+        80+ peer-reviewed articles in visual communication, UX/UI design, interaction design, motion graphics, and media studies. Published in <em>Archives of Design Research</em>, <em>Frontiers in Computer Science </em>, <em>Journal of Design Convergence</em> and other indexed journals.<br>
+        Full list: <span style="color:#1a1a1a;"><a href="scholar.google.com/citations?user=XN9D6bQAAAAJ">scholar.google.com/citations?user=XN9D6bQAAAAJ</a></span>
+      </div>
+    </div>
+
+  </div><!-- /cv-grid -->
+
+  <hr class="divider-line">
+  <div style="font-size:7.5pt; color:#999; text-align:right; margin-top:3px;">CV updated May 2026</div>
+
+</div>
+</body>
+</html>
